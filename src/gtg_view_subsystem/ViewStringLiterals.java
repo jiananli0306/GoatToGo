@@ -56,4 +56,5 @@ public class ViewStringLiterals {
 	public static final String CAFE = "Cafe";
 	public static final String VENDING = "Vending";
 	public static final String WAYPOINT = "Waypoint";
+	public static final String NO_PATH_AVAILABLE = "Unable to find the route. Please try new search.";
 }

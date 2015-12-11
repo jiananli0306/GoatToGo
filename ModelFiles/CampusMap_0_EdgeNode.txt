@@ -1,255 +1,255 @@
 NODES
-1 446 133 0 CampusMap 0 Building
-5 819 324 0 CampusMap 0 Building
-6 721 297 0 CampusMap 0 Building
-7 996 398 0 CampusMap 0 Building
-9 979 491 0 CampusMap 0 Building
-10 972 527 0 CampusMap 0 Building
-12 788 566 0 CampusMap 0 Building
-13 794 644 0 CampusMap 0 Building
-14 864 691 0 CampusMap 0 Building
-15 989 712 0 CampusMap 0 Building
-16 759 768 0 CampusMap 0 Building
-17 794 760 0 CampusMap 0 Building
-18 839 872 0 CampusMap 0 Building
-19 759 843 0 CampusMap 0 Building
-20 677 788 0 CampusMap 0 Building
-21 653 671 0 CampusMap 0 Building
-22 653 837 0 CampusMap 0 Building
-23 560 843 0 CampusMap 0 Building
-24 571 906 0 CampusMap 0 Building
-25 436 788 0 CampusMap 0 Building
-26 640 415 0 CampusMap 0 Building
-28 544 462 0 CampusMap 0 Building
-30 364 133 0 CampusMap 0 Building
-31 347 178 0 CampusMap 0 Building
-32 313 191 0 CampusMap 0 Building
-35 481 408 0 CampusMap 0 Building
-38 380 614 0 CampusMap 0 Building
-39 302 599 0 CampusMap 0 Building
-40 302 491 0 CampusMap 0 Building
-41 325 391 0 CampusMap 0 Building
-42 218 370 0 CampusMap 0 Building
-43 95 428 0 CampusMap 0 Building
-47 72 691 0 CampusMap 0 Building
-48 109 747 0 CampusMap 0 Building
-49 145 889 0 CampusMap 0 Building
-50 237 805 0 CampusMap 0 Building
-51 232 843 0 CampusMap 0 Building
-52 166 788 0 CampusMap 0 Building
-53 237 768 0 CampusMap 0 Building
-54 313 768 0 CampusMap 0 Building
-55 302 788 0 CampusMap 0 Building
-56 213 978 0 CampusMap 0 Building
-57 172 686 0 CampusMap 0 Building
-58 232 699 0 CampusMap 0 Building
-60 264 691 0 CampusMap 0 ParkingLot
-61 369 724 0 CampusMap 0 ParkingLot
-62 759 813 0 CampusMap 0 ParkingLot
-63 881 614 0 CampusMap 0 ParkingLot
-64 158 95 0 CampusMap 0 ParkingLot
-65 709 441 0 CampusMap 0 ParkingLot
-66 744 462 0 CampusMap 0 ParkingLot
-67 721 535 0 CampusMap 0 ParkingLot
-68 693 527 0 CampusMap 0 ParkingLot
-69 716 614 0 CampusMap 0 ParkingLot
-70 979 1016 0 CampusMap 0 Waypoint
-71 989 955 0 CampusMap 0 Waypoint
-72 864 962 0 CampusMap 0 Waypoint
-73 839 967 0 CampusMap 0 Waypoint
-74 693 978 0 CampusMap 0 Waypoint
-75 374 1016 0 CampusMap 0 Waypoint
-76 247 1016 0 CampusMap 0 Waypoint
-77 247 984 0 CampusMap 0 Waypoint
-78 275 818 0 CampusMap 0 Waypoint
-79 280 768 0 CampusMap 0 Waypoint
-80 285 712 0 CampusMap 0 Waypoint
-81 294 671 0 CampusMap 0 Waypoint
-82 414 686 0 CampusMap 0 Waypoint
-83 407 747 0 CampusMap 0 Waypoint
-84 407 776 0 CampusMap 0 Waypoint
-85 388 889 0 CampusMap 0 Waypoint
-86 551 881 0 CampusMap 0 Waypoint
-87 640 872 0 CampusMap 0 Waypoint
-88 701 889 0 CampusMap 0 Waypoint
-89 721 799 0 CampusMap 0 Waypoint
-90 728 724 0 CampusMap 0 Waypoint
-91 794 729 0 CampusMap 0 Waypoint
-92 864 736 0 CampusMap 0 Waypoint
-93 902 736 0 CampusMap 0 Waypoint
-94 916 652 0 CampusMap 0 Waypoint
-95 924 594 0 CampusMap 0 Waypoint
-96 934 561 0 CampusMap 0 Waypoint
-97 943 506 0 CampusMap 0 Waypoint
-98 943 441 0 CampusMap 0 Waypoint
-99 959 384 0 CampusMap 0 Waypoint
-100 972 339 0 CampusMap 0 Waypoint
-101 810 256 0 CampusMap 0 Waypoint
-102 794 318 0 CampusMap 0 Waypoint
-103 794 349 0 CampusMap 0 Waypoint
-104 759 546 0 CampusMap 0 Waypoint
-105 735 681 0 CampusMap 0 Waypoint
-106 667 729 0 CampusMap 0 Waypoint
-107 587 747 0 CampusMap 0 Waypoint
-108 487 724 0 CampusMap 0 Waypoint
-109 422 632 0 CampusMap 0 Waypoint
-110 436 554 0 CampusMap 0 Waypoint
-111 446 506 0 CampusMap 0 Waypoint
-112 422 497 0 CampusMap 0 Waypoint
-113 355 484 0 CampusMap 0 Waypoint
-114 347 535 0 CampusMap 0 Waypoint
-115 330 561 0 CampusMap 0 Waypoint
-116 275 561 0 CampusMap 0 Waypoint
-118 237 604 0 CampusMap 0 Waypoint
-119 237 652 0 CampusMap 0 Waypoint
-120 196 644 0 CampusMap 0 Waypoint
-121 158 644 0 CampusMap 0 Waypoint
-123 145 699 0 CampusMap 0 Waypoint
-124 134 760 0 CampusMap 0 Waypoint
-125 120 881 0 CampusMap 0 Waypoint
-126 95 1016 0 CampusMap 0 Waypoint
-127 881 872 0 CampusMap 0 Waypoint
-128 839 1016 0 CampusMap 0 Waypoint
-129 1016 754 0 CampusMap 0 Waypoint
-130 984 747 0 CampusMap 0 Waypoint
-131 721 357 0 CampusMap 0 Waypoint
-132 759 349 0 CampusMap 0 Waypoint
-133 1011 357 0 CampusMap 0 Waypoint
-134 776 462 0 CampusMap 0 Waypoint
-135 753 224 0 CampusMap 0 Waypoint
-136 667 178 0 CampusMap 0 Waypoint
-137 513 95 0 CampusMap 0 Waypoint
-138 487 214 0 CampusMap 0 Waypoint
-139 487 247 0 CampusMap 0 Waypoint
-140 476 297 0 CampusMap 0 Waypoint
-141 470 370 0 CampusMap 0 Waypoint
-142 422 363 0 CampusMap 0 Waypoint
-143 374 357 0 CampusMap 0 Waypoint
-144 364 403 0 CampusMap 0 Waypoint
-145 347 441 0 CampusMap 0 Waypoint
-146 294 428 0 CampusMap 0 ParkingLot
-147 218 415 0 CampusMap 0 Waypoint
-148 166 415 0 CampusMap 0 Waypoint
-149 134 471 0 CampusMap 0 Waypoint
-150 134 522 0 CampusMap 0 Waypoint
-151 166 554 0 CampusMap 0 Waypoint
-153 153 581 0 CampusMap 0 Building
-154 196 491 0 CampusMap 0 Waypoint
-155 400 546 0 CampusMap 0 Waypoint
-157 693 644 0 CampusMap 0 Waypoint
-158 686 599 0 CampusMap 0 Waypoint
-159 677 561 0 CampusMap 0 Waypoint
-160 653 554 0 CampusMap 0 Waypoint
-161 640 581 0 CampusMap 0 Waypoint
-162 612 614 0 CampusMap 0 Waypoint
-163 587 632 0 CampusMap 0 Waypoint
-164 544 652 0 CampusMap 0 Waypoint
-165 500 632 0 CampusMap 0 Waypoint
-166 481 604 0 CampusMap 0 Waypoint
-167 470 566 0 CampusMap 0 Waypoint
-168 560 581 0 CampusMap 0 Waypoint
-169 571 554 0 CampusMap 0 Waypoint
-170 582 491 0 CampusMap 0 Waypoint
-171 592 449 0 CampusMap 0 Waypoint
-172 600 408 0 CampusMap 0 Waypoint
-173 612 363 0 CampusMap 0 Waypoint
-174 619 329 0 CampusMap 0 Waypoint
-176 560 289 0 CampusMap 0 Waypoint
-177 537 277 0 CampusMap 0 Waypoint
-178 709 707 0 CampusMap 0 Waypoint
-179 640 699 0 CampusMap 0 Waypoint
-180 551 691 0 CampusMap 0 Waypoint
-181 529 671 0 CampusMap 0 Waypoint
-182 523 581 0 CampusMap 0 Waypoint
-183 456 428 0 CampusMap 0 Waypoint
-184 481 476 0 CampusMap 0 Building
-185 523 384 0 CampusMap 0 Waypoint
-186 693 391 0 CampusMap 0 Waypoint
-187 686 441 0 CampusMap 0 Waypoint
-188 677 491 0 CampusMap 0 Waypoint
-189 667 527 0 CampusMap 0 Waypoint
-191 145 391 0 CampusMap 0 Waypoint
-192 145 370 0 CampusMap 0 Waypoint
-193 145 339 0 CampusMap 0 Waypoint
-194 158 318 0 CampusMap 0 Waypoint
-196 127 283 0 CampusMap 0 Waypoint
-197 120 262 0 CampusMap 0 Waypoint
-198 134 247 0 CampusMap 0 Waypoint
-199 145 224 0 CampusMap 0 Waypoint
-200 166 200 0 CampusMap 0 Waypoint
-201 218 133 0 CampusMap 0 Waypoint
-202 275 79 0 CampusMap 0 Waypoint
-203 339 1 0 CampusMap 0 Waypoint
-204 374 10 0 CampusMap 0 Waypoint
-205 313 100 0 CampusMap 0 Waypoint
-206 318 133 0 CampusMap 0 Waypoint
-207 313 156 0 CampusMap 0 Waypoint
-208 339 156 0 CampusMap 0 Waypoint
-209 339 133 0 CampusMap 0 Waypoint
-210 355 108 0 CampusMap 0 Waypoint
-211 380 73 0 CampusMap 0 Waypoint
-212 380 38 0 CampusMap 0 Waypoint
-213 431 1 0 CampusMap 0 Waypoint
-214 347 289 0 CampusMap 0 Waypoint
-215 355 262 0 CampusMap 0 Waypoint
-216 374 224 0 CampusMap 0 Waypoint
-217 374 184 0 CampusMap 0 Waypoint
-218 887 554 0 CampusMap 0 Waypoint
-219 864 554 0 CampusMap 0 Waypoint
-220 839 546 0 CampusMap 0 Waypoint
-222 776 535 0 CampusMap 0 Waypoint
-223 446 644 0 CampusMap 0 Waypoint
-224 523 768 0 CampusMap 0 Waypoint
-225 566 783 0 CampusMap 0 Waypoint
-226 612 776 0 CampusMap 0 Waypoint
-227 653 760 0 CampusMap 0 Waypoint
-228 158 242 0 CampusMap 0 Waypoint
-229 179 262 0 CampusMap 0 Waypoint
-230 158 297 0 CampusMap 0 Waypoint
-231 487 527 0 CampusMap 0 Waypoint
-233 218 561 0 CampusMap 0 Waypoint
-234 892 506 0 CampusMap 0 Building
-235 902 441 0 CampusMap 0 Waypoint
-236 897 471 0 CampusMap 0 Building
-237 819 471 0 CampusMap 0 Building
-238 810 540 0 CampusMap 0 Waypoint
-239 819 506 0 CampusMap 0 Building
-240 109 632 0 CampusMap 0 Waypoint
-241 103 671 0 CampusMap 0 Waypoint
-242 72 660 0 CampusMap 0 Building
-243 57 632 0 CampusMap 0 Waypoint
-244 41 671 0 CampusMap 0 Building
-245 247 554 0 CampusMap 0 Waypoint
-246 529 242 0 CampusMap 0 Building
-247 571 262 0 CampusMap 0 Building
-248 380 297 0 CampusMap 0 Building
-250 431 214 0 CampusMap 0 Waypoint
-251 414 302 0 CampusMap 0 Waypoint
-252 446 289 0 CampusMap 0 Building
-253 400 339 0 CampusMap 0 Waypoint
-254 364 318 0 CampusMap 0 Building
-255 523 324 0 CampusMap 0 Building
-256 544 357 0 CampusMap 0 Building
-257 619 471 0 CampusMap 0 Waypoint
-258 632 506 0 CampusMap 0 Waypoint
-259 632 535 0 CampusMap 0 Waypoint
-260 27 614 0 CampusMap 0 Waypoint
-261 4 581 0 CampusMap 0 Waypoint
-262 4 546 0 CampusMap 0 Waypoint
-263 57 506 0 CampusMap 0 Waypoint
-264 109 506 0 CampusMap 0 Waypoint
-265 95 554 0 CampusMap 0 Building
-267 544 566 2 BoyntonHall 2 Classroom
-268 500 561 1 BoyntonHall 2 Building
-269 523 546 3 BoyntonHall 1 Building
-270 544 535 0 CampusMap 0 Waypoint
-271 451 471 0 CampusMap 0 Waypoint
-272 414 421 0 CampusMap 0 Building
-273 374 441 0 CampusMap 0 Building
-274 407 178 0 CampusMap 0 Waypoint
-275 744 632 0 CampusMap 0 Waypoint
-276 592 302 0 CampusMap 0 Waypoint
-277 645 283 0 CampusMap 0 Building
+1 446 133 0 CampusMap 0 Building WayPoint;
+5 819 324 0 CampusMap 0 Building WayPoint;
+6 721 297 0 CampusMap 0 Building WayPoint;
+7 996 398 0 CampusMap 0 Building WayPoint;
+9 979 491 0 CampusMap 0 Building WayPoint;
+10 972 527 0 CampusMap 0 Building WayPoint;
+12 788 566 0 CampusMap 0 Building WayPoint;
+13 794 644 0 CampusMap 0 Building WayPoint;
+14 864 691 0 CampusMap 0 Building WayPoint;
+15 989 712 0 CampusMap 0 Building WayPoint;
+16 759 768 0 CampusMap 0 Building WayPoint;
+17 794 760 0 CampusMap 0 Building WayPoint;
+18 839 872 0 CampusMap 0 Building WayPoint;
+19 759 843 0 CampusMap 0 Building WayPoint;
+20 677 788 0 CampusMap 0 Building WayPoint;
+21 653 671 0 CampusMap 0 Building WayPoint;
+22 653 837 0 CampusMap 0 Building WayPoint;
+23 560 843 0 CampusMap 0 Building WayPoint;
+24 571 906 0 CampusMap 0 Building WayPoint;
+25 436 788 0 CampusMap 0 Building WayPoint;
+26 640 415 0 Library 0 Building Gordon;Library;
+28 544 462 0 CampusMap 0 Building WayPoint;
+30 364 133 0 CampusMap 0 Building WayPoint;
+31 347 178 0 CampusMap 0 Building WayPoint;
+32 313 191 0 CampusMap 0 Building WayPoint;
+35 481 408 0 ProjectCenter 0 Building Project;Center;
+38 380 614 0 CampusMap 0 Building WayPoint;
+39 302 599 0 CampusMap 0 Building WayPoint;
+40 302 491 0 CampusMap 0 Building WayPoint;
+41 325 391 0 CampusMap 0 Building WayPoint;
+42 218 370 0 CampusMap 0 Building WayPoint;
+43 95 428 0 CampusMap 0 Building WayPoint;
+47 72 691 0 CampusMap 0 Building WayPoint;
+48 109 747 0 CampusMap 0 Building WayPoint;
+49 145 889 0 CampusMap 0 Building WayPoint;
+50 237 805 0 CampusMap 0 Building WayPoint;
+51 232 843 0 CampusMap 0 Building WayPoint;
+52 166 788 0 CampusMap 0 Building WayPoint;
+53 237 768 0 CampusMap 0 Building WayPoint;
+54 313 768 0 CampusMap 0 Building WayPoint;
+55 302 788 0 CampusMap 0 Building WayPoint;
+56 213 978 0 CampusMap 0 Building WayPoint;
+57 172 686 0 CampusMap 0 Building WayPoint;
+58 232 699 0 CampusMap 0 Building WayPoint;
+60 264 691 0 CampusMap 0 ParkingLot ParkingLot;
+61 369 724 0 CampusMap 0 ParkingLot ParkingLot;
+62 759 813 0 CampusMap 0 ParkingLot ParkingLot;
+63 881 614 0 CampusMap 0 ParkingLot ParkingLot;
+64 158 95 0 CampusMap 0 ParkingLot ParkingLot;
+65 709 441 0 CampusMap 0 ParkingLot ParkingLot;
+66 744 462 0 CampusMap 0 ParkingLot ParkingLot;
+67 721 535 0 CampusMap 0 ParkingLot ParkingLot;
+68 693 527 0 CampusMap 0 ParkingLot ParkingLot;
+69 716 614 0 CampusMap 0 ParkingLot ParkingLot;
+70 979 1016 0 CampusMap 0 Waypoint WayPoint;
+71 989 955 0 CampusMap 0 Waypoint WayPoint;
+72 864 962 0 CampusMap 0 Waypoint WayPoint;
+73 839 967 0 CampusMap 0 Waypoint WayPoint;
+74 693 978 0 CampusMap 0 Waypoint WayPoint;
+75 374 1016 0 CampusMap 0 Waypoint WayPoint;
+76 247 1016 0 CampusMap 0 Waypoint WayPoint;
+77 247 984 0 CampusMap 0 Waypoint WayPoint;
+78 275 818 0 CampusMap 0 Waypoint WayPoint;
+79 280 768 0 CampusMap 0 Waypoint WayPoint;
+80 285 712 0 CampusMap 0 Waypoint WayPoint;
+81 294 671 0 CampusMap 0 Waypoint WayPoint;
+82 414 686 0 CampusMap 0 Waypoint WayPoint;
+83 407 747 0 CampusMap 0 Waypoint WayPoint;
+84 407 776 0 CampusMap 0 Waypoint WayPoint;
+85 388 889 0 CampusMap 0 Waypoint WayPoint;
+86 551 881 0 CampusMap 0 Waypoint WayPoint;
+87 640 872 0 CampusMap 0 Waypoint WayPoint;
+88 701 889 0 CampusMap 0 Waypoint WayPoint;
+89 721 799 0 CampusMap 0 Waypoint WayPoint;
+90 728 724 0 CampusMap 0 Waypoint WayPoint;
+91 794 729 0 CampusMap 0 Waypoint WayPoint;
+92 864 736 0 CampusMap 0 Waypoint WayPoint;
+93 902 736 0 CampusMap 0 Waypoint WayPoint;
+94 916 652 0 CampusMap 0 Waypoint WayPoint;
+95 924 594 0 CampusMap 0 Waypoint WayPoint;
+96 934 561 0 CampusMap 0 Waypoint WayPoint;
+97 943 506 0 CampusMap 0 Waypoint WayPoint;
+98 943 441 0 CampusMap 0 Waypoint WayPoint;
+99 959 384 0 CampusMap 0 Waypoint WayPoint;
+100 972 339 0 CampusMap 0 Waypoint WayPoint;
+101 810 256 0 CampusMap 0 Waypoint WayPoint;
+102 794 318 0 CampusMap 0 Waypoint WayPoint;
+103 794 349 0 CampusMap 0 Waypoint WayPoint;
+104 759 546 0 CampusMap 0 Waypoint WayPoint;
+105 735 681 0 CampusMap 0 Waypoint WayPoint;
+106 667 729 0 CampusMap 0 Waypoint WayPoint;
+107 587 747 0 CampusMap 0 Waypoint WayPoint;
+108 487 724 0 CampusMap 0 Waypoint WayPoint;
+109 422 632 0 CampusMap 0 Waypoint WayPoint;
+110 436 554 0 CampusMap 0 Waypoint WayPoint;
+111 446 506 0 CampusMap 0 Waypoint WayPoint;
+112 422 497 0 CampusMap 0 Waypoint WayPoint;
+113 355 484 0 CampusMap 0 Waypoint WayPoint;
+114 347 535 0 CampusMap 0 Waypoint WayPoint;
+115 330 561 0 CampusMap 0 Waypoint WayPoint;
+116 275 561 0 CampusMap 0 Waypoint WayPoint;
+118 237 604 0 CampusMap 0 Waypoint WayPoint;
+119 237 652 0 CampusMap 0 Waypoint WayPoint;
+120 196 644 0 CampusMap 0 Waypoint WayPoint;
+121 158 644 0 CampusMap 0 Waypoint WayPoint;
+123 145 699 0 CampusMap 0 Waypoint WayPoint;
+124 134 760 0 CampusMap 0 Waypoint WayPoint;
+125 120 881 0 CampusMap 0 Waypoint WayPoint;
+126 95 1016 0 CampusMap 0 Waypoint WayPoint;
+127 881 872 0 CampusMap 0 Waypoint WayPoint;
+128 839 1016 0 CampusMap 0 Waypoint WayPoint;
+129 1016 754 0 CampusMap 0 Waypoint WayPoint;
+130 984 747 0 CampusMap 0 Waypoint WayPoint;
+131 721 357 0 CampusMap 0 Waypoint WayPoint;
+132 759 349 0 CampusMap 0 Waypoint WayPoint;
+133 1011 357 0 CampusMap 0 Waypoint WayPoint;
+134 776 462 0 CampusMap 0 Waypoint WayPoint;
+135 753 224 0 CampusMap 0 Waypoint WayPoint;
+136 667 178 0 CampusMap 0 Waypoint WayPoint;
+137 513 95 0 CampusMap 0 Waypoint WayPoint;
+138 487 214 0 CampusMap 0 Waypoint WayPoint;
+139 487 247 0 CampusMap 0 Waypoint WayPoint;
+140 476 297 0 CampusMap 0 Waypoint WayPoint;
+141 470 370 0 CampusMap 0 Waypoint WayPoint;
+142 422 363 0 CampusMap 0 Waypoint WayPoint;
+143 374 357 0 CampusMap 0 Waypoint WayPoint;
+144 364 403 0 CampusMap 0 Waypoint WayPoint;
+145 347 441 0 CampusMap 0 Waypoint WayPoint;
+146 294 428 0 CampusMap 0 ParkingLot WayPoint;
+147 218 415 0 CampusMap 0 Waypoint WayPoint;
+148 166 415 0 CampusMap 0 Waypoint WayPoint;
+149 134 471 0 CampusMap 0 Waypoint WayPoint;
+150 134 522 0 CampusMap 0 Waypoint WayPoint;
+151 166 554 0 CampusMap 0 Waypoint WayPoint;
+153 153 581 0 CampusMap 0 Building WayPoint;
+154 196 491 0 CampusMap 0 Waypoint WayPoint;
+155 400 546 0 CampusMap 0 Waypoint WayPoint;
+157 693 644 0 CampusMap 0 Waypoint WayPoint;
+158 686 599 0 CampusMap 0 Waypoint WayPoint;
+159 677 561 0 CampusMap 0 Waypoint WayPoint;
+160 653 554 0 CampusMap 0 Waypoint WayPoint;
+161 640 581 0 CampusMap 0 Waypoint WayPoint;
+162 612 614 0 CampusMap 0 Waypoint WayPoint;
+163 587 632 0 CampusMap 0 Waypoint WayPoint;
+164 544 652 0 CampusMap 0 Waypoint WayPoint;
+165 500 632 0 CampusMap 0 Waypoint WayPoint;
+166 481 604 0 CampusMap 0 Waypoint WayPoint;
+167 470 566 0 CampusMap 0 Waypoint WayPoint;
+168 560 581 0 CampusMap 0 Waypoint WayPoint;
+169 571 554 0 CampusMap 0 Waypoint WayPoint;
+170 582 491 0 CampusMap 0 Waypoint WayPoint;
+171 592 449 0 CampusMap 0 Waypoint WayPoint;
+172 600 408 0 CampusMap 0 Waypoint WayPoint;
+173 612 363 0 CampusMap 0 Waypoint WayPoint;
+174 619 329 0 CampusMap 0 Waypoint WayPoint;
+176 560 289 0 CampusMap 0 Waypoint WayPoint;
+177 537 277 0 CampusMap 0 Waypoint WayPoint;
+178 709 707 0 CampusMap 0 Waypoint WayPoint;
+179 640 699 0 CampusMap 0 Waypoint WayPoint;
+180 551 691 0 CampusMap 0 Waypoint WayPoint;
+181 529 671 0 CampusMap 0 Waypoint WayPoint;
+182 523 581 0 CampusMap 0 Waypoint WayPoint;
+183 456 428 0 CampusMap 0 Waypoint WayPoint;
+184 481 476 0 CampusMap 0 Building WayPoint;
+185 523 384 0 CampusMap 0 Waypoint WayPoint;
+186 693 391 0 CampusMap 0 Waypoint WayPoint;
+187 686 441 0 CampusMap 0 Waypoint WayPoint;
+188 677 491 0 CampusMap 0 Waypoint WayPoint;
+189 667 527 0 CampusMap 0 Waypoint WayPoint;
+191 145 391 0 CampusMap 0 Waypoint WayPoint;
+192 145 370 0 CampusMap 0 Waypoint WayPoint;
+193 145 339 0 CampusMap 0 Waypoint WayPoint;
+194 158 318 0 CampusMap 0 Waypoint WayPoint;
+196 127 283 0 CampusMap 0 Waypoint WayPoint;
+197 120 262 0 CampusMap 0 Waypoint WayPoint;
+198 134 247 0 CampusMap 0 Waypoint WayPoint;
+199 145 224 0 CampusMap 0 Waypoint WayPoint;
+200 166 200 0 CampusMap 0 Waypoint WayPoint;
+201 218 133 0 CampusMap 0 Waypoint WayPoint;
+202 275 79 0 CampusMap 0 Waypoint WayPoint;
+203 339 1 0 CampusMap 0 Waypoint WayPoint;
+204 374 10 0 CampusMap 0 Waypoint WayPoint;
+205 313 100 0 CampusMap 0 Waypoint WayPoint;
+206 318 133 0 CampusMap 0 Waypoint WayPoint;
+207 313 156 0 CampusMap 0 Waypoint WayPoint;
+208 339 156 0 CampusMap 0 Waypoint WayPoint;
+209 339 133 0 CampusMap 0 Waypoint WayPoint;
+210 355 108 0 CampusMap 0 Waypoint WayPoint;
+211 380 73 0 CampusMap 0 Waypoint WayPoint;
+212 380 38 0 CampusMap 0 Waypoint WayPoint;
+213 431 1 0 CampusMap 0 Waypoint WayPoint;
+214 347 289 0 CampusMap 0 Waypoint WayPoint;
+215 355 262 0 CampusMap 0 Waypoint WayPoint;
+216 374 224 0 CampusMap 0 Waypoint WayPoint;
+217 374 184 0 CampusMap 0 Waypoint WayPoint;
+218 887 554 0 CampusMap 0 Waypoint WayPoint;
+219 864 554 0 CampusMap 0 Waypoint WayPoint;
+220 839 546 0 CampusMap 0 Waypoint WayPoint;
+222 776 535 0 CampusMap 0 Waypoint WayPoint;
+223 446 644 0 CampusMap 0 Waypoint WayPoint;
+224 523 768 0 CampusMap 0 Waypoint WayPoint;
+225 566 783 0 CampusMap 0 Waypoint WayPoint;
+226 612 776 0 CampusMap 0 Waypoint WayPoint;
+227 653 760 0 CampusMap 0 Waypoint WayPoint;
+228 158 242 0 CampusMap 0 Waypoint WayPoint;
+229 179 262 0 CampusMap 0 Waypoint WayPoint;
+230 158 297 0 CampusMap 0 Waypoint WayPoint;
+231 487 527 0 CampusMap 0 Waypoint WayPoint;
+233 218 561 0 CampusMap 0 Waypoint WayPoint;
+234 892 506 0 CampusMap 0 Building WayPoint;
+235 902 441 0 CampusMap 0 Waypoint WayPoint;
+236 897 471 0 CampusMap 0 Building WayPoint;
+237 819 471 0 CampusMap 0 Building WayPoint;
+238 810 540 0 CampusMap 0 Waypoint WayPoint;
+239 819 506 0 CampusMap 0 Building WayPoint;
+240 109 632 0 CampusMap 0 Waypoint WayPoint;
+241 103 671 0 CampusMap 0 Waypoint WayPoint;
+242 72 660 0 CampusMap 0 Building WayPoint;
+243 57 632 0 CampusMap 0 Waypoint WayPoint;
+244 41 671 0 CampusMap 0 Building WayPoint;
+245 247 554 0 CampusMap 0 Waypoint WayPoint;
+246 529 242 0 CampusMap 0 Building WayPoint;
+247 571 262 0 CampusMap 0 Building WayPoint;
+248 380 297 0 CampusMap 0 Building WayPoint;
+250 431 214 0 CampusMap 0 Waypoint WayPoint;
+251 414 302 0 CampusMap 0 Waypoint WayPoint;
+252 446 289 0 CampusMap 0 Building WayPoint;
+253 400 339 0 CampusMap 0 Waypoint WayPoint;
+254 364 318 0 CampusMap 0 Building WayPoint;
+255 523 324 0 CampusMap 0 Building WayPoint;
+256 544 357 0 CampusMap 0 Building WayPoint;
+257 619 471 0 CampusMap 0 Waypoint WayPoint;
+258 632 506 0 CampusMap 0 Waypoint WayPoint;
+259 632 535 0 CampusMap 0 Waypoint WayPoint;
+260 27 614 0 CampusMap 0 Waypoint WayPoint;
+261 4 581 0 CampusMap 0 Waypoint WayPoint;
+262 4 546 0 CampusMap 0 Waypoint WayPoint;
+263 57 506 0 CampusMap 0 Waypoint WayPoint;
+264 109 506 0 CampusMap 0 Waypoint WayPoint;
+265 95 554 0 CampusMap 0 Building WayPoint;
+267 544 566 2 BoyntonHall 2 Building Boynton;Hall;
+268 500 561 1 BoyntonHall 1 Building Boynton;Hall;
+269 523 546 3 BoyntonHall 1 Building Boynton;Hall;
+270 544 535 0 CampusMap 0 Waypoint WayPoint;
+271 451 471 0 CampusMap 0 Waypoint WayPoint;
+272 414 421 0 CampusMap 0 Building WayPoint;
+273 374 441 0 CampusMap 0 Building WayPoint;
+274 407 178 0 CampusMap 0 Waypoint WayPoint;
+275 744 632 0 CampusMap 0 Waypoint WayPoint;
+276 592 302 0 CampusMap 0 Waypoint WayPoint;
+277 645 283 0 FullerLab 0 Building Fuller;Lab;
 EDGES
 1 70 71
 2 71 72
@@ -546,3 +546,5 @@ EDGES
 346 276 174
 347 277 276
 348 247 176
+349 141 35
+350 35 183

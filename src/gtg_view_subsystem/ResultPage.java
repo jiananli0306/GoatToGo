@@ -23,8 +23,8 @@ public class ResultPage extends JPanel {
 	private JTextField fromTextField, toTextField, currentMapName, totalMaps;
 	private JPanel leftPanel, rightPanel;
 	private JButton zoomInBtn, zoomOutBtn, newSearchBtn, nextBtn ,previousBtn;
-	private ImageIcon zoomInBtnImage, zoomOutBtnImage, newSearchBtnImage, nextBtnImage, previousBtnImage;
-	private JLabel fromLabel, toLabel;
+	private ImageIcon zoomInBtnImage, zoomOutBtnImage, newSearchBtnImage, nextBtnImage, previousBtnImage, fromLocationIconImage, toLocationIconImage;
+	private JLabel fromLabel, toLabel, noPathAvailable, fromLocationIcon, toLocationIcon;
 	private MainView parent;
 	private JScrollPane mapPanelHolder;
 	private JLayeredPane layeredPane;
@@ -33,7 +33,8 @@ public class ResultPage extends JPanel {
 	private double currentZoomValue = 1.0;
 	private double zoomFactor = 0.1;
 	private ResultMapDisplayPanel resultMapDisplayPanel;
-	private ArrayList<String> mapNamesArray;
+	private int index = 0;
+	private int totalMapsValue = 0;
 	/**
 	 * Create the panel.
 	 * @param mainView 
@@ -54,6 +55,13 @@ public class ResultPage extends JPanel {
 		this.layeredPane = new JLayeredPane();
 		this.layeredPane.setBounds(0, 0, 950, 650);
 		this.leftPanel.add(this.layeredPane);
+
+		this.noPathAvailable = new JLabel(ViewStringLiterals.NO_PATH_AVAILABLE);
+		this.noPathAvailable.setFont(new Font("Meiryo", Font.PLAIN, 24));
+		this.noPathAvailable.setForeground(new Color(0x5b1010));
+		this.noPathAvailable.setBounds(350, 310, 250, 30);
+		this.noPathAvailable.setVisible(false);
+		this.layeredPane.add(this.noPathAvailable, new Integer(1));
 
 		this.zoomInBtn = new JButton();
 		zoomInBtn.addActionListener(new ActionListener() {
@@ -108,6 +116,12 @@ public class ResultPage extends JPanel {
 		this.fromLabel.setBounds(15, 105, 98, 25);
 		this.fromLabel.setForeground(new Color(0x5b1010));
 		this.rightPanel.add(this.fromLabel);
+		
+		this.fromLocationIcon = new JLabel();
+		this.fromLocationIcon.setBounds(370, 105, 20, 25);
+		this.fromLocationIconImage = new ImageIcon(ImageURLS.LOCATION_IMAGE);
+		this.fromLocationIcon.setIcon(this.fromLocationIconImage);
+		this.rightPanel.add(this.fromLocationIcon);
 
 		this.toLabel = new JLabel(ViewStringLiterals.TO + " :");
 		this.toLabel.setFont(new Font("Meiryo", Font.PLAIN, 24));
@@ -115,6 +129,12 @@ public class ResultPage extends JPanel {
 		this.toLabel.setForeground(new Color(0x5b1010));
 		this.rightPanel.add(this.toLabel);
 		
+		this.toLocationIcon = new JLabel();
+		this.toLocationIcon.setBounds(370, 165, 20, 25);
+		this.toLocationIconImage = new ImageIcon(ImageURLS.LOCATION_END_ICON);
+		this.toLocationIcon.setIcon(this.toLocationIconImage);
+		this.rightPanel.add(this.toLocationIcon);
+
 		this.fromTextField = new JTextField();
 		this.fromTextField.setFont(new Font("Meiryo", Font.PLAIN, 24));
 		this.fromTextField.setEditable(false);
@@ -134,6 +154,12 @@ public class ResultPage extends JPanel {
 		this.rightPanel.add(this.toTextField);
 
 		this.nextBtn = new JButton();
+		nextBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				index++;
+				parent.getNextPrevPath(index);
+			}
+		});
 		this.nextBtn.setBounds(320, 300, 56, 90);
 		this.nextBtn.setContentAreaFilled(false);
 		this.nextBtn.setBorder(null);
@@ -143,6 +169,12 @@ public class ResultPage extends JPanel {
 
 
 		this.previousBtn = new JButton();
+		previousBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				index--;
+				parent.getNextPrevPath(index);
+			}
+		});
 		this.previousBtn.setBounds(30, 300, 58, 90);
 		this.previousBtn.setContentAreaFilled(false);
 		this.previousBtn.setBorder(null);
@@ -188,23 +220,48 @@ public class ResultPage extends JPanel {
 	 * Method displayPath.
 	 * @param path PathData
 	 */
-	public void displayPath(PathData path) {
-		System.out.println(path.getWayPoints());
-		// TODO Auto-generated method stub
+	public void displayPath(PathData path, int currentMapIndex) {
+		this.noPathAvailable.setVisible(false);
+		this.index = currentMapIndex;
+
 		Point tempPoint = path.getStartPoint();
-		this.fromTextField.setText(" X:" + (int)tempPoint.getX() + ",  Y:" + (int)tempPoint.getY());
+		this.fromTextField.setText(parent.getStartEndNodeDescription("FROM"));
 		tempPoint = path.getEndPoint();
-		this.toTextField.setText(" X:" + (int)tempPoint.getX() + ",  Y:" + (int)tempPoint.getY());
+		this.toTextField.setText(parent.getStartEndNodeDescription("TO"));
 		
-		this.currentMapName.setText(path.getArrayOfMapNames().get(0));
-		this.totalMaps.setText("1 / " + path.getArrayOfMapNames().size());
-		
-		this.mapNamesArray = path.getArrayOfMapNames();
-		String mapURL = this.parent.tempMapURL(this.mapNamesArray.get(0));
-		this.resultMapDisplayPanel = new ResultMapDisplayPanel(this, this.mapPanelHolder, mapNamesArray.get(0), mapURL);
+		this.totalMapsValue = path.getArrayOfMapNames().size();
+		this.currentMapName.setText(path.getArrayOfMapNames().get(currentMapIndex));
+		this.totalMaps.setText((currentMapIndex + 1) + " / " + this.totalMapsValue);
+
+		this.resultMapDisplayPanel = new ResultMapDisplayPanel(this, this.mapPanelHolder, this.currentMapName.getText(), path.getMapURL());
 		this.mapPanelHolder.setViewportView(resultMapDisplayPanel);
 		this.currentZoomValue = 1.0;
 		
 		this.resultMapDisplayPanel.displayPoints(path.getWayPoints());
+		
+		if(totalMapsValue == 1){
+			this.nextBtn.setEnabled(false);
+			this.previousBtn.setEnabled(false);
+		} else {
+			if(this.index <= 0){
+				this.nextBtn.setEnabled(true);
+				this.previousBtn.setEnabled(false);
+			} else if(this.index >= this.totalMapsValue - 1){
+				this.nextBtn.setEnabled(false);
+				this.previousBtn.setEnabled(true);
+			} else {
+				this.nextBtn.setEnabled(true);
+				this.previousBtn.setEnabled(true);
+			}
+				
+		}
+	}
+	
+	public void pathNotAvailable(){
+		this.noPathAvailable.setVisible(true);
+		this.fromTextField.setText("");
+		this.toTextField.setText("");
+		this.nextBtn.setEnabled(false);
+		this.previousBtn.setEnabled(false);
 	}
 }

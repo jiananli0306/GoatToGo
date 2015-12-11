@@ -18,7 +18,7 @@ public class Node
 		private String building;
 		private int floorNum;
 		private String type;
-		
+		private String description;
 		
 		/** the information about the node
 		 *such as its name and location
@@ -27,7 +27,7 @@ public class Node
 		 * @param y int
 		 */
 
-		public Node(int id, int x, int y, int entranceID, String building, int floorNum, String type){
+		public Node(int id, int x, int y, int entranceID, String building, int floorNum, String type, String description){
 			this.id = id;
 			this.x = x;
 			this.y = y;
@@ -35,6 +35,7 @@ public class Node
 			this.building = building;
 			this.floorNum = floorNum;
 			this.type = type;
+			this.description = description;
 		}
 
 
@@ -107,6 +108,12 @@ public class Node
 			this.type = type;
 		}
 		
+		public String getDescription(){
+			return this.description;
+		}
+		public void setDescription(String description){
+			this.description = description;
+		}
 		
 		
 	}

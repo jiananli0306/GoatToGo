@@ -15,29 +15,23 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Enumeration;
-
-
+import java.util.LinkedHashMap;
+import java.util.Set;
+import java.util.Iterator;
 
 public class MainController{
 		
 	public MainModel mapModel;
-	/**/
-	
-	private PathSearchController pathSearchController;
-	private Hashtable<String, Path> calculationResult;
-	private ArrayList<String> resultMapList;
-	private Path currentPath;
-	private Node startPnt;
-	private Node EndPnt;
-	
-	
-	private AdminController userChecker;
 	
 	private MapDataController mapDataController;
+	private PathSearchController pathSearchController;
+	private AdminController userChecker;
 
 	public MainController(MainModel mapModel){
 		this.mapModel = mapModel;
 		mapDataController = new MapDataController(this);
+		pathSearchController = new PathSearchController(this, mapDataController); 
+		userChecker = new AdminController(this);
 	}	
 	
 	/******************************
@@ -52,8 +46,12 @@ public class MainController{
 	public String getMapURL(String mapName){
 		return mapDataController.getMapURL(mapName);
 	}
+	
+	public String getPointDescription(Point pnt){
+		return mapDataController.getNodeDescription(pnt);
+	}
 
-	// This 3 function is called each time when View is changing page
+	// This 3 functions below should be called each time when View is changing page
 	public Boolean LoadingPntsAndEdges(String mapName){
 		return mapDataController.LoadingPntsAndEdges(mapName);
 	}
@@ -62,9 +60,14 @@ public class MainController{
 	}
 	public ArrayList<Point> getDisplayEdge(){
 		return mapDataController.getDisplayEdge();
-	}	
+	}
+	
 	public ArrayList<Point> getFilteredList(String pointType){
 		return mapDataController.getFilteredList(pointType);
+	}
+	
+	public String getMouseSelectedBuilding(Point mouseClickedPnt){
+		return mapDataController.getClickedBuildingMapName(mouseClickedPnt);
 	}
 	
 	/* Not used right now,correspond to getMapList() method. Get the
@@ -75,7 +78,7 @@ public class MainController{
 	 * From ModelSubsystem*/
 	public ArrayList<String> getMapData(String mapName){
 		ArrayList<String> mapData= new ArrayList<String>();
-		mapData=mapModel.getArrayOfMapNames();
+		mapData = mapModel.getArrayOfMapNames();
 		return mapData;
 	}
 	
@@ -85,81 +88,20 @@ public class MainController{
 	 * 
 	 *******************************/
 	public Point setTaskPnt(Point taskPnt, String pntType, String mapName){
-		Point targetPnt = new Point();
-		System.out.println("Task Type: " + pntType);
-		
-		// Get a Node here instead of a Point!!!
-		targetPnt = mapModel.validatePoint(mapName, taskPnt.x, taskPnt.y);
-		
-		//mapModel.setStartEndPathPoint(targetPnt, pntType, mapName);
-		//setTempTaskPoint(taskPnt, pntType, mapName);
-		
-		return targetPnt;
+		return pathSearchController.setTaskPnt(taskPnt, pntType, mapName);
 	}
 	
 	public PathData getDesiredPath(int Index){
-		PathData path = new PathData();
-		
-		String requestedMapName = resultMapList.get(Index);
-		currentPath = calculationResult.get(requestedMapName);
-
-		// Set StartPnt
-		Point TempStartPnt = new Point();
-		Node TempNode =  currentPath.getStartPoint();
-		TempStartPnt.x = TempNode.getX();
-		TempStartPnt.y = TempNode.getY();		
-		path.setStartPoint(TempStartPnt);
-		
-		// Set EndPnt
-		TempNode = currentPath.getEndPoint();
-		Point TempEndPnt = new Point();
-		TempEndPnt.x = TempNode.getX();
-		TempEndPnt.y = TempNode.getY();
-		path.setEndPoint(TempEndPnt);		
-		
-		// Set wayPoint List
-		ArrayList<Point> displayWayPnts = convertNodeListIntoPointList(currentPath);
-		path.setWayPoints(displayWayPnts);
-
-		// Set mapName List
-		path.setArrayOfMapNames(resultMapList);	
-		
-		// Set URL of current map
-		int IndexOfMapURL = mapDataController.getCurrentMapNameList().indexOf(requestedMapName);
-		String mapURL = mapDataController.getCurrentMapURLList().get(IndexOfMapURL);		
-		path.setMapURL(mapURL);
-		
-		return path;
+		return pathSearchController.getDesiredPath(Index);
 	}
 	
-	private ArrayList<Point> convertNodeListIntoPointList(Path inputPath){
-		ArrayList<Point> pntPath = new ArrayList<Point>();
-		List<Node> currentNodePath = inputPath.getWayPoints();
-		if(!currentNodePath.isEmpty()){
-			for(Node nd:currentNodePath){
-				Point pnt = new Point();
-				pnt.x = nd.getX();
-				pnt.y = nd.getY();
-				pntPath.add(pnt);			
-			}
-		}		
-		return pntPath;
-	}
-	
-	
+	public String getStartEndNodeDescription(String pointType){
+		return pathSearchController.getStartEndNodeDescription(pointType);
+	}	
+		
 	public boolean getPathData(){
-		//String mapName = "BoyntonHall_1";
-		boolean pathCalculated = false;
-		// calculationResult =  mapModel.MULTILAYERPATH(startNode, endNode);
-		Enumeration<String> calculationResultMapName = calculationResult.keys();
-
-		while(calculationResultMapName.hasMoreElements()) {
-			String mapName = calculationResultMapName.nextElement();
-			resultMapList.add(mapName);
-		}		
-		return pathCalculated;
-	}
-	
+		return pathSearchController.getPathData();
+	}	
 	
 	/******************************
 	 * 
@@ -167,13 +109,7 @@ public class MainController{
 	 * 
 	 *******************************/
 	public Boolean adminQualification(String userName, String passWord){
-		Boolean isAdmin = false;
-		isAdmin = mapModel.isValidAdmin(userName, passWord);
-		if(!isAdmin){
-			System.out.println("Sorry You are not Admin!");
-			mapModel.printAdmins();
-		}
-		return isAdmin;
+		return userChecker.adminQualification(userName, passWord);
 	}
 	
 	
@@ -247,6 +183,13 @@ public class MainController{
 
 	public Boolean addPoint(Point inputPnt, int floorNum, int entranceID, String buildingName, String pointType, String pointDescription){
 		return mapDataController.addPoint(inputPnt, floorNum, entranceID, buildingName, pointType, pointDescription);
+	}
+	
+	public boolean EditNode(int nodeID, int entranceID, String pointType, String pointDescription){
+		return mapDataController.editExistNode(nodeID,
+											   entranceID,
+											   pointType,
+											   pointDescription);	
 	}
 
 	public Boolean createEdge(Point pnt1, Point pnt2){		

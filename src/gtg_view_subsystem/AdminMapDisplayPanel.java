@@ -108,11 +108,11 @@ public class AdminMapDisplayPanel extends MapDisplayPanel {
 		JTextField description = new JTextField();
 		JTextField entranceId = new JTextField();
 		JTextField building = new JTextField();
+		
 		building.setText(this.building);
 		
 		int pos = this.building.toLowerCase().indexOf(("campus").toLowerCase());
 
-		//if (this.building.equals("Campus")) {
 		if(pos != -1){
 			building.setEditable(true);
 		} else {
@@ -120,7 +120,7 @@ public class AdminMapDisplayPanel extends MapDisplayPanel {
 		}
 		JTextField floor = new JTextField();
 		floor.setText(this.floor);
-		//if (this.floor.equals("Campus")) {
+		
 		if(pos != -1){
 			floor.setEditable(true);
 		} else {
@@ -146,8 +146,8 @@ public class AdminMapDisplayPanel extends MapDisplayPanel {
 		panel.add(new JLabel("Type:"));
 		panel.add(pointType);
 
-//		panel.add(new JLabel("Description:"));
-//		panel.add(description);
+		panel.add(new JLabel("Description:"));
+		panel.add(description);
 		if (me.getButton() == MouseEvent.BUTTON1) {
 			switch (this.mode) {
 			case "Create Points":
@@ -168,23 +168,18 @@ public class AdminMapDisplayPanel extends MapDisplayPanel {
 					int Origin_EntranceID = adminViewPageHandle.getNodeEntranceID(NodeID);
 					String Origin_Description = adminViewPageHandle.getNodeDescription(NodeID);
 				
-					// Using Original Data to set those text field; NOT WORKING!!!
-					System.out.println("Origin_BuildingName: "+Origin_BuildingName);
 					building.setText(Origin_BuildingName);
 
-					System.out.println("Origin_FloorNum: "+Origin_FloorNum);
 					floor.setText(Integer.toString(Origin_FloorNum));
 					
 					pointType.setSelectedIndex(Arrays.asList(listPointTypes).indexOf(Origin_NodeType));					
 					
 					entranceId.setText(Integer.toString(Origin_EntranceID));					
-					
+
 					description.setText(Origin_Description);				
 				}				
 				int result = JOptionPane.showConfirmDialog(null, panel, "Please Describe Point",
-						JOptionPane.OK_CANCEL_OPTION);
-
-			
+						JOptionPane.OK_CANCEL_OPTION);		
 				
 				if (result == JOptionPane.OK_OPTION) {
 					// Get Building Name
@@ -221,7 +216,7 @@ public class AdminMapDisplayPanel extends MapDisplayPanel {
 						newDescription = "Null";
 					}
 					// If the point hasn't be created, Create a new point 
-					//if(createNewPoint){						
+					if(createNewPoint){						
 						adminViewPageHandle.CreatePoint(newPoint, 
 														floorNum, 
 														newEnterenceId, 
@@ -229,11 +224,11 @@ public class AdminMapDisplayPanel extends MapDisplayPanel {
 														newType,
 														newDescription);
 						
-					//}
+					}
 					// Otherwise, edit current point
-					//else{
-						
-					//}
+					else{
+						adminViewPageHandle.EditNode(NodeID, newEnterenceId, newType, newDescription);						
+					}
 					System.out.println("Building: " + this.building);
 					System.out.println("Floor: " + this.floor);
 					System.out.println("Description: " + description.getText());

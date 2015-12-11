@@ -21,7 +21,7 @@ import javax.swing.JScrollPane;
 /**
  */
 public class ResultMapDisplayPanel extends MapDisplayPanel{
-	private Image locationImage;
+	private Image locationImage, locationEndImage;
 	private String map;
 	private ResultPage parent;
 	private ArrayList<Point> pathPoints = new ArrayList<Point>();
@@ -42,6 +42,7 @@ public class ResultMapDisplayPanel extends MapDisplayPanel{
 
 		super.loadImage(mapurl);
 		this.loadLocationImage();
+		this.loadLocationEndImage();
 	}
 	    
 	/**
@@ -58,11 +59,8 @@ public class ResultMapDisplayPanel extends MapDisplayPanel{
         	if(i == 0){
         		g2.drawImage(this.locationImage, (int)p.getX() - 10, (int)p.getY() - 25, 20, 25, null);
         	} else if(i == pathPoints.size() - 1){
-        		g2.drawImage(this.locationImage, (int)p.getX() - 10, (int)p.getY() - 25, 20, 25, null);
-        	} /*else {
-        		Ellipse2D.Double circle = new Ellipse2D.Double(p.getX() - (circleWidthHeight * super.getScale() / 2), p.getY()  - (circleWidthHeight * super.getScale() / 2), circleWidthHeight * super.getScale(), circleWidthHeight * super.getScale());
-        		g2.fill(circle);
-        	}*/
+        		g2.drawImage(this.locationEndImage, (int)p.getX() - 10, (int)p.getY() - 25, 20, 25, null);
+        	}
         	
         	int j = i+1;
         	if(j < pathPoints.size()){
@@ -75,9 +73,31 @@ public class ResultMapDisplayPanel extends MapDisplayPanel{
         }
 	}
 
+	/**
+	 * Method loadLocationImage.
+	 * @param none
+	 * Loads the image used for displaying start location on the map image
+	 */
 	public void loadLocationImage() {
         try {
             this.locationImage = ImageIO.read(new File(ImageURLS.LOCATION_IMAGE));
+        }
+        catch(MalformedURLException mue) {
+            System.out.println("URL trouble: " + mue.getMessage());
+        }
+        catch(IOException ioe) {
+        	System.out.println("read trouble: " + ioe.getMessage());
+        }
+	}
+
+	/**
+	 * Method loadLocationEndImage.
+	 * @param none
+	 * Loads the image used for displaying end location on the map image
+	 */
+	public void loadLocationEndImage() {
+        try {
+            this.locationEndImage = ImageIO.read(new File(ImageURLS.LOCATION_END_ICON));
         }
         catch(MalformedURLException mue) {
             System.out.println("URL trouble: " + mue.getMessage());

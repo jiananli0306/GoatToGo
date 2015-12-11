@@ -57,6 +57,7 @@ public class FileProcessing {
 	 * @return true if delete succeeded false otherwise * @throws IOException  */
 	public boolean deleteMapFromMaster(String mapName) throws IOException{
 			boolean deleteSuccess = true;
+			boolean firstLine = true;
 			//String references to master list and a temporary written master list file
 			String masterMapListURL = "ModelFiles"+System.getProperty("file.separator")+ "masterMapList.txt";
 			String masterMapListTemp = "ModelFiles"+System.getProperty("file.separator")+ "masterMapList_temp.txt";
@@ -70,7 +71,6 @@ public class FileProcessing {
 			String line;
 			//Array of map values from master list text file
 			String lines[];
-			int i = 0;
 			try{
 				originalFile = new File(masterMapListURL);
 				tempFile = new File(masterMapListTemp);
@@ -84,8 +84,9 @@ public class FileProcessing {
 						lines = line.split("[\\s+]");
 						//IF the line map name does not equal null and the line map name does not equal map name
 						if(lines[0] != null && !lines[0].equals(mapName)){
-								if( i == 0){
+								if(firstLine){
 									writer.write(line);
+									firstLine = false;
 								}else{
 									writer.write(System.getProperty("line.separator"));
 									writer.write(line);
@@ -195,7 +196,9 @@ public class FileProcessing {
 	 */
 	public boolean readNodes(List<Node> nodes, String line, String[] lines){
 			boolean readSuccess = true;
+			String finalDescription;
 			lines = line.split("[\\s+]");
+			
 			//construct a node
 			Node node = new Node(Integer.parseInt(lines[0]),//id 
 								 Integer.parseInt(lines[1]),//x
@@ -203,8 +206,14 @@ public class FileProcessing {
 								 Integer.parseInt(lines[3]),//entranceID
 								 lines[4],//building
 								 Integer.parseInt(lines[5]),//floorNum
-								 lines[6]//type
-								 );
+								 lines[6],//type
+								 "");
+			if(lines[7] != ""){
+				finalDescription = loadDescription(lines[7]);
+				node.setDescription(finalDescription);
+			}else{
+				node.setDescription("");
+			}
 			nodes.add(node);
 			return readSuccess;
 	}
@@ -298,14 +307,18 @@ public class FileProcessing {
 		    			  node.getEntranceID() + " " +
 		    			  node.getBuilding() + " " +
 		    			  node.getFloorNum() + " " +
-		    			  node.getType() +
+		    			  node.getType() + " " +
+		    			  saveDescription(node.getDescription()) +
 		    			  System.getProperty("line.separator"));
 		    }
 		    System.out.println("File Node Write Success!");
 
 		    out.write("EDGES" + System.getProperty("line.separator"));
 		    for(Edge edge: edges){
-		    	out.write(edge.getEdgeID() + " " + edge.getSource().getID() + " " + edge.getDestination().getID() + System.getProperty("line.separator"));
+		    	out.write(edge.getEdgeID() + " " + 
+		    	edge.getSource().getID() + " " + 
+		    	edge.getDestination().getID() + 
+		    	System.getProperty("line.separator"));
 		    }
 		    System.out.println("File Edge Write Success!");
 
@@ -336,6 +349,40 @@ public class FileProcessing {
 			return false;
 		}
 		return createFile;
+	}
+	private String loadDescription(String readLineDescription){
+			if(readLineDescription.equals("")){
+				System.out.println("The word was blank");
+			}
+			String arrayOfWordsFromDescription[];
+			String finalDescription;
+			StringBuilder buildDescription = new StringBuilder();
+			
+			arrayOfWordsFromDescription = readLineDescription.split(";");
+			//Add the each word from description into the node description
+			for(String word : arrayOfWordsFromDescription){
+				buildDescription.append(word + " ");
+			}
+			finalDescription = buildDescription.toString();
+			finalDescription.trim();
+			return finalDescription;
+	}
+	private String saveDescription(String nodeDescription){
+		String finalDescription = "";
+		String arrayOfWordsFromDescription[];
+		StringBuilder buildDescription = new StringBuilder();
+		
+		if(nodeDescription.equals("")){
+			return finalDescription;
+		}
+		arrayOfWordsFromDescription = nodeDescription.split(" ");
+		//Add the each word from description into the node description
+		for(String word : arrayOfWordsFromDescription){
+			buildDescription.append(word + ";");
+		}
+		finalDescription = buildDescription.toString();
+		finalDescription.trim();
+		return finalDescription;
 	}
 	/**
 	 * Method calculateDistance.

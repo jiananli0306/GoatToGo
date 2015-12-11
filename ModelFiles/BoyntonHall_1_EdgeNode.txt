@@ -1,85 +1,85 @@
 NODES
-1 862 951 0 BoyntonHall 1 Waypoint
-2 862 844 0 BoyntonHall 1 Waypoint
-5 783 539 0 BoyntonHall 1 Waypoint
-6 732 539 0 BoyntonHall 1 Waypoint
-7 663 533 0 BoyntonHall 1 Waypoint
-8 605 533 0 BoyntonHall 1 Waypoint
-9 492 533 0 BoyntonHall 1 Waypoint
-10 385 533 0 BoyntonHall 1 Waypoint
-16 37 179 0 BoyntonHall 1 Classroom
-17 106 271 0 BoyntonHall 1 Classroom
-18 189 325 0 BoyntonHall 1 Classroom
-19 157 185 0 BoyntonHall 1 Classroom
-22 298 325 0 BoyntonHall 1 Classroom
-23 240 325 0 BoyntonHall 1 Classroom
-26 373 291 0 BoyntonHall 1 Classroom
-27 385 308 0 BoyntonHall 1 Classroom
-28 409 374 0 BoyntonHall 1 Elevator
-29 480 213 0 BoyntonHall 1 Classroom
-30 516 279 0 BoyntonHall 1 Classroom
-31 583 279 0 BoyntonHall 1 Classroom
-33 633 185 0 BoyntonHall 1 Classroom
-36 633 365 0 BoyntonHall 1 Classroom
-37 583 348 0 BoyntonHall 1 Classroom
-39 487 386 0 BoyntonHall 1 Classroom
-40 487 467 0 BoyntonHall 1 Classroom
-41 605 90 1 BoyntonHall 1 Classroom
-42 605 279 0 BoyntonHall 1 Waypoint
-45 783 507 0 BoyntonHall 1 Classroom
-46 882 300 0 BoyntonHall 1 Classroom
-50 775 589 0 BoyntonHall 1 Classroom
-52 732 589 0 BoyntonHall 1 Classroom
-54 663 589 0 BoyntonHall 1 Classroom
-56 500 589 0 BoyntonHall 1 Classroom
-58 385 589 0 BoyntonHall 1 Classroom
-59 298 494 0 BoyntonHall 1 Classroom
-61 240 560 0 BoyntonHall 1 Classroom
-65 76 773 0 BoyntonHall 1 Classroom
-69 86 533 0 BoyntonHall 1 Classroom
-70 136 419 0 BoyntonHall 1 Classroom
-72 55 374 0 BoyntonHall 1 Classroom
-73 182 413 0 BoyntonHall 1 Classroom
-74 320 614 2 BoyntonHall 1 Stairs
-75 915 806 0 BoyntonHall 1 Stairs
-76 862 790 0 BoyntonHall 1 Waypoint
-80 343 179 0 BoyntonHall 1 Classroom
-81 298 263 0 BoyntonHall 1 Waypoint
-82 298 154 0 BoyntonHall 1 Waypoint
-83 189 271 0 BoyntonHall 1 Waypoint
-84 106 374 0 BoyntonHall 1 Classroom
-85 136 374 0 BoyntonHall 1 Waypoint
-86 182 374 0 BoyntonHall 1 Waypoint
-87 240 374 0 BoyntonHall 1 Waypoint
-88 298 374 0 BoyntonHall 1 Waypoint
-89 385 374 0 BoyntonHall 1 Waypoint
-90 343 291 0 BoyntonHall 1 Classroom
-91 320 533 0 BoyntonHall 1 Waypoint
-92 320 494 0 BoyntonHall 1 Waypoint
-93 240 494 0 BoyntonHall 1 Waypoint
-94 385 663 0 BoyntonHall 1 Classroom
-95 500 663 0 BoyntonHall 1 Classroom
-96 663 670 0 BoyntonHall 1 Classroom
-97 732 663 0 BoyntonHall 1 Classroom
-98 775 663 0 BoyntonHall 1 Classroom
-99 862 582 0 BoyntonHall 1 Waypoint
-100 971 582 0 BoyntonHall 1 Waypoint
-102 240 670 0 BoyntonHall 1 Waypoint
-103 240 714 0 BoyntonHall 1 Waypoint
-104 182 714 0 BoyntonHall 1 Waypoint
-105 76 714 0 BoyntonHall 1 Waypoint
-107 182 773 0 BoyntonHall 1 Classroom
-108 76 836 0 BoyntonHall 1 Classroom
-109 182 836 0 BoyntonHall 1 Classroom
-110 254 773 0 BoyntonHall 1 Classroom
-111 254 836 0 BoyntonHall 1 Classroom
-112 963 300 0 BoyntonHall 1 Classroom
-113 783 300 0 BoyntonHall 1 Classroom
-114 680 185 0 BoyntonHall 1 Classroom
-115 680 365 0 BoyntonHall 1 Classroom
-116 541 348 0 BoyntonHall 1 Classroom
-117 605 348 0 BoyntonHall 1 Waypoint
-118 862 539 0 BoyntonHall 1 Waypoint
+1 862 951 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+2 862 844 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+5 783 539 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+6 732 539 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+7 663 533 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+8 605 533 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+9 492 533 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+10 385 533 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+16 37 179 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+17 106 271 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+18 189 325 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+19 157 185 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+22 298 325 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+23 240 325 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+26 373 291 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+27 385 308 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+28 409 374 0 BoyntonHall 1 Elevator TEMP;DESCRIPTION;HOLDER;
+29 480 213 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+30 516 279 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+31 583 279 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+33 633 185 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+36 633 365 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+37 583 348 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+39 487 386 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+40 487 467 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+41 605 90 1 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+42 605 279 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+45 783 507 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+46 882 300 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+50 775 589 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+52 732 589 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+54 663 589 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+56 500 589 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+58 385 589 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+59 298 494 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+61 240 560 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+65 76 773 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+69 86 533 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+70 136 419 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+72 55 374 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+73 182 413 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+74 320 614 3 BoyntonHall 1 Stairs TEMP;DESCRIPTION;HOLDER;
+75 915 806 4 BoyntonHall 1 Stairs TEMP;DESCRIPTION;HOLDER;
+76 862 790 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+80 343 179 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+81 298 263 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+82 298 154 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+83 189 271 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+84 106 374 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+85 136 374 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+86 182 374 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+87 240 374 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+88 298 374 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+89 385 374 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+90 343 291 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+91 320 533 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+92 320 494 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+93 240 494 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+94 385 663 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+95 500 663 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+96 663 670 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+97 732 663 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+98 775 663 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+99 862 582 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+100 971 582 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+102 240 670 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+103 240 714 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+104 182 714 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+105 76 714 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+107 182 773 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+108 76 836 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+109 182 836 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+110 254 773 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+111 254 836 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+112 963 300 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+113 783 300 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+114 680 185 0 BoyntonHall 1 Classroom Room;006;
+115 680 365 0 BoyntonHall 1 Classroom Room;003A;
+116 541 348 0 BoyntonHall 1 Classroom TEMP;DESCRIPTION;HOLDER;
+117 605 348 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
+118 862 539 0 BoyntonHall 1 Waypoint TEMP;DESCRIPTION;HOLDER;
 EDGES
 1 1 2
 5 5 6

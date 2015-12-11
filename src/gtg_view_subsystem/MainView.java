@@ -135,13 +135,22 @@ public class MainView {
 		return pntToBeMapped;
 	}
 
-	public void getPathResult(String mapName) {
-		// 2015-12-01 Yixiao
-		//PathData path = mainController.getPathData(mapName);
-		//showResultPage();
-		//this.resultPage.displayPath(path);
+	public void getPathResult() {
+		boolean pathCalculated = mainController.getPathData();
+		showResultPage();
+		if(pathCalculated == true){
+			PathData path = mainController.getDesiredPath(0);
+			this.resultPage.displayPath(path, 0);
+		} else {
+			//this.resultPage.showErrorPopup();
+		}
 	}
 
+	public void getNextPrevPath(int index){
+		PathData path = mainController.getDesiredPath(index);
+		this.resultPage.displayPath(path, index);
+	}
+	
 	/**
 	 * Method deleteSelectedPoint.
 	 * @param selectedPointType String
@@ -207,6 +216,12 @@ public class MainView {
 		}
 	}
 	
+	public String getMouseSelectedBuilding(Point mouseClickedPnt){
+		String correspondMapName = null;
+		correspondMapName = this.mainController.getMouseSelectedBuilding(mouseClickedPnt);
+		return correspondMapName;
+	}
+	
 	/**
 	 * Method getListOfFloors.
 	 * @param mapName String
@@ -257,6 +272,14 @@ public class MainView {
 	public String tempMapURL(String mapName){
 		String mapURL = this.mainController.getMapURL(mapName);
 		return mapURL;
+	}
+	
+	// Yixiao 2015-12-10
+	public String getPointDescription(Point pnt){
+		return this.mainController.getPointDescription(pnt);
+	}
+	public String getStartEndNodeDescription(String type){
+		return this.mainController.getStartEndNodeDescription(type);
 	}
 
 	/**

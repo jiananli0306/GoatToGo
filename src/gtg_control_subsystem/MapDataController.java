@@ -88,15 +88,9 @@ public class MapDataController {
 		String newUrl=new String();
 		String osName=System.getProperty("os.name");
 		if (osName.contains("Mac")||osName.contains("Linux")){
-			//System.out.println(System.getProperty("file.separator"));
-			//System.out.println(System.getProperty("os.name"));
 			newUrl=url.replace("\\", System.getProperty("file.separator"));
-			//System.out.println("!!!!!!!!!!!! new URL:"+newUrl);	
 		} else {
-			//System.out.println(System.getProperty("file.separator"));
-			//System.out.println(System.getProperty("os.name"));
 			newUrl=url;
-			//System.out.println("!!!!!!!!!!!! new URL:"+newUrl);	
 		}
 		
 		return newUrl;
@@ -106,15 +100,9 @@ public class MapDataController {
 		String newUrl=new String();
 		String osName=System.getProperty("os.name");
 		if (osName.contains("Mac")||osName.contains("Linux")){
-			//System.out.println(System.getProperty("file.separator"));
-			//System.out.println(System.getProperty("os.name"));
 			newUrl=url.replace(System.getProperty("file.separator"), "\\");
-			//System.out.println("!!!!!!!!!!!! new URL:"+newUrl);	
 		} else {
-			//System.out.println(System.getProperty("file.separator"));
-			//System.out.println(System.getProperty("os.name"));
 			newUrl=url;
-			//System.out.println("!!!!!!!!!!!! new URL:"+newUrl);	
 		}
 		return newUrl;
 	}
@@ -129,24 +117,30 @@ public class MapDataController {
 	
 	private void updateMapList(String mapRequestCommand){
 
-		listOfMapNameForReturn.clear();
-		listOfMapURLForReturn.clear();
 		
 		switch(mapRequestCommand){
 		case "admin":
+			listOfMapNameForReturn.clear();
+			listOfMapURLForReturn.clear();
 			mainController.mapModel.loadMapLists();
 			LoadInMapNameList();
 			LoadInMapURL();
 			getAllMapNameAndURL();
 			break;
 		case "CampusMap":
-			getDesiredMapFromMapList(mapRequestCommand);
+			listOfMapNameForReturn.clear();
+			listOfMapURLForReturn.clear();
+			updateMapListWithDesiredMapName(mapRequestCommand);
 			addAllBuildingIntoList();
 			break;		
 		// Get All the buildingMap
 		default:
-			getDesiredMapFromMapList(mapRequestCommand);
-			getDesiredMapFromMapList("CampusMap");
+			if(validateBuildingName(mapRequestCommand)){
+				listOfMapNameForReturn.clear();
+				listOfMapURLForReturn.clear();
+				updateMapListWithDesiredMapName(mapRequestCommand);
+				updateMapListWithDesiredMapName("CampusMap");
+			}
 			break;
 		}
 	}
@@ -174,7 +168,7 @@ public class MapDataController {
 		}
 	}
 	
-	private void getDesiredMapFromMapList(String desiredMap){
+	private void updateMapListWithDesiredMapName(String desiredMap){
 		for(String mapName:listOfMapName){
 			String Section_1 ="";
 			int end = mapName.lastIndexOf("_");
@@ -187,13 +181,21 @@ public class MapDataController {
 			}
 		}
 	}
+	
+	private boolean validateBuildingName(String buildingName){
+		boolean buildingMapExist = false;
+		for(String mapName:listOfMapName){
+			String Section_1 ="";
+			int end = mapName.lastIndexOf("_");
+			Section_1=mapName.substring(0, end);
+			if(buildingName.equals(Section_1)){
+				buildingMapExist = true;
+				return buildingMapExist;
+			}
+		}
+		return buildingMapExist;		
+	}
 
-	/* Added by  neha. For now this method just pushes the data into the listofMaps and urlsofMaps.
-	 * Once the model method is available call that method with the same paramaters.
-	 * The model method should return a boolean value:
-	 * True if mapName and mapImageURL are stored succesfully into the .txt file
-	 * False if mapName and mapImageURL are not stored succesfully into the .txt file
-	 */
 	public void addNewMapToList(String mapName){
 		if(listOfMapName.indexOf(mapName)<0){
 			listOfMapName.add(mapName);
@@ -206,12 +208,6 @@ public class MapDataController {
 		}
 	}
 
-	/* Added by  neha. For now this method just deletes the map from listofMaps and urlsofMaps.
-	 * Once the model method is available call that method with the same paramaters.
-	 * The model method should return a boolean value:
-	 * True if mapName and mapImageURL are deleted succesfully from the .txt file
-	 * False if mapName and mapImageURL are not deleted succesfully from the .txt file
-	 */
 	// Remove the map from MapList and MapURLList at the same time;
 	public Boolean removeMapFromList(String mapName){
 		Boolean mapRemoved = false;
@@ -250,6 +246,21 @@ public class MapDataController {
 		return mapurl;
 	}
 	
+	// 2015-12-08
+	public String getClickedBuildingMapName(Point inputPnt){
+		String buildingMapName = null;
+		Node mappingResult = searchingAPointInNodeList(inputPnt);
+		if(mappingResult!=null){
+			buildingMapName = mappingResult.getBuilding();
+			// Be sure, this is a building instead of Campus;
+			System.out.println(mappingResult.getDescription());
+			if(!buildingMapName.equals("CampusMap")){
+				return buildingMapName;
+			}
+		}
+		return buildingMapName;
+	}
+	
 	/* *******************************
 	 * 
 	 * 			Nodes and Edges
@@ -260,11 +271,10 @@ public class MapDataController {
 		this.nodeList.clear();
 		this.edgeList.clear();
 		this.tempPntList.clear();
-		this.tempEdgeList.clear();
-		
+		this.tempEdgeList.clear();		
 		if(mainController.mapModel.loadFiles(mapName)){
 			LoadInNodeList(mapName);
-			LoadInEdgeList(mapName);			 
+			LoadInEdgeList(mapName);	 
 			transferNodeToPnt2D(this.nodeList);
 			transferEdgeToPnt2D(this.edgeList);
 
@@ -315,10 +325,18 @@ public class MapDataController {
 		
 	}
 
+	private String newStr (String str) {
+		String newStr = str;
+		if (newStr.trim().isEmpty()) {
+			newStr = "NULL";
+		}
+		return newStr;
+	}
+
 	public Boolean addPoint(Point inputPnt, int floorNum, int entranceID, String buildingName, String pointType, String pointDescription){
 		Boolean success = false;
 		int i=CheckPntExistence(inputPnt);
-		if(i==0){
+		if(i<0){
 			
 			int coord_X = (int)inputPnt.getX();
 			int coord_Y = (int)inputPnt.getY();						
@@ -331,17 +349,35 @@ public class MapDataController {
 				}
 			}
 			
-			nodeList.add(new Node(this.getMaxNodeID()+1, coord_X, coord_Y, entranceID, buildingName, floorNum, pointType));
+/*			System.out.println(pointDescription);
+			pointDescription = pointDescription.replace("\\s+", ";");
+			System.out.println(pointDescription);*/
 			
+			nodeList.add(new Node(this.getMaxNodeID()+1, coord_X, coord_Y, entranceID, buildingName, floorNum, pointType, newStr(pointDescription)));
 			transferNodeToPnt2D(nodeList);
 			success = true;
-		}else if (i>0){
+			
+		}
+		else{
 			Node n=findNodeInList(i);
 			n.setBuilding(buildingName);
 			n.setFloorNum(floorNum);
 			n.setEntranceID(entranceID);
 			n.setType(pointType);
+			n.setDescription(newStr(pointDescription));
 			success= true;
+		}
+		return success;
+	}
+	
+	public boolean editExistNode(int nodeID, int entranceID, String pointType, String pointDescription){
+		boolean success = false;
+		Node nd = findNodeInList(nodeID);
+		if(nd!=null){
+			nd.setEntranceID(entranceID);
+			nd.setType(pointType);
+			nd.setDescription(newStr(pointDescription));
+			success = true;
 		}
 		return success;
 	}
@@ -431,15 +467,48 @@ public class MapDataController {
 		return searchingResult;
 	}
 	
+	public String getNodeDescription(Point pnt){
+		String description = "";
+		Node nd = findNodeInList(pnt);
+		if(nd!=null){
+			System.out.println(description);
+			description = nd.getDescription();
+		}
+		return description;
+	}
+	
 	private Node findNodeInList (int nodeID) {
-		Node node=null;
 		for (Node n:nodeList) {
-			if (n.getID()==nodeID) {
-				node=n;
-				return node;
+			if (n.getID()==nodeID) {				
+				return n;
 			}
 		}
-		return node;
+		return null;
+	}
+	
+	private Node findNodeInList(Point Inputpnt){
+		for(Node nd:nodeList){
+			if(nd.getX() == Inputpnt.x&&nd.getY() == Inputpnt.y){
+				return nd;
+			}				
+		}
+		return null;
+	}
+	
+	private Node searchingAPointInNodeList(Point inputPnt){
+		Node result = null;
+		int threshold = 20;
+		for(Node nd:nodeList){
+			if(getPointDistance((double)nd.getX(),(double)nd.getY(),inputPnt.getX(),inputPnt.getY())<threshold){
+				result = nd;
+				return result;
+			}
+		}		
+		return result;		
+	}
+	
+	private double getPointDistance(double x1,double y1,double x2, double y2){
+		return Math.sqrt(Math.pow(x1-x2, 2)+ Math.pow(y1 - y2, 2));		
 	}
 	
 	public int CheckPntExistence(Point pnt){
@@ -448,7 +517,7 @@ public class MapDataController {
 		for (Node tempN: nodeList){
 			double d = Math.sqrt(Math.pow(pnt.getX() - tempN.getX(), 2) + 
 							     Math.pow(pnt.getY() - tempN.getY(), 2));
-			System.out.println("the distance is : "+d);
+			//System.out.println("the distance is : "+d);
 			if(d <= toleranceRadius){
 				pntID = tempN.getID();
 				System.out.println("Point "+pntID+" is Found in the nodeList!");
@@ -560,7 +629,7 @@ public class MapDataController {
 	public String getDescriptionOfNode (int nodeID){
 		String description=new String();
 		if (this.findNodeInList(nodeID)!=null){
-			//description=this.findNodeInList(nodeID).getDescription();
+			description=this.findNodeInList(nodeID).getDescription();
 			//waiting for extension of node class;
 			return description;
 		}

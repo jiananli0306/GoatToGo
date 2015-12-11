@@ -1,62 +1,65 @@
 NODES
-1 870 781 0 BoyntonHall 4 Stairs
-2 870 750 0 BoyntonHall 4 Waypoint
-3 870 651 0 BoyntonHall 4 Waypoint
-4 870 619 0 BoyntonHall 4 Waypoint
-7 664 677 0 BoyntonHall 4 Waypoint
-8 635 677 0 BoyntonHall 4 Waypoint
-9 571 677 0 BoyntonHall 4 Waypoint
-10 557 486 0 BoyntonHall 4 Waypoint
-12 503 435 0 BoyntonHall 4 Waypoint
-13 471 435 0 BoyntonHall 4 Waypoint
-14 432 435 0 BoyntonHall 4 Waypoint
-15 392 435 0 BoyntonHall 4 Waypoint
-16 299 435 0 BoyntonHall 4 Waypoint
-17 231 443 0 BoyntonHall 4 Waypoint
-18 210 443 0 BoyntonHall 4 Waypoint
-32 307 715 0 BoyntonHall 4 Waypoint
-33 333 715 0 BoyntonHall 4 Waypoint
-34 333 854 0 BoyntonHall 4 Waypoint
-35 446 854 0 BoyntonHall 4 Waypoint
-36 437 656 0 BoyntonHall 4 Stairs
-37 432 486 0 BoyntonHall 4 Waypoint
-39 525 151 0 BoyntonHall 4 Classroom
-40 402 139 0 BoyntonHall 4 Classroom
-41 333 246 0 BoyntonHall 4 Classroom
-42 392 211 0 BoyntonHall 4 Classroom
-46 427 386 0 BoyntonHall 4 Elevator
-47 392 386 0 BoyntonHall 4 Classroom
-48 70 191 0 BoyntonHall 4 Classroom
-49 42 83 0 BoyntonHall 4 Classroom
-53 843 862 0 BoyntonHall 4 Classroom
-72 491 715 0 BoyntonHall 4 Classroom
-73 476 486 0 BoyntonHall 4 Classroom
-76 916 619 0 BoyntonHall 4 Classroom
-77 983 619 0 BoyntonHall 4 Classroom
-78 916 688 0 BoyntonHall 4 Classroom
-79 983 688 0 BoyntonHall 4 Classroom
-80 787 619 0 BoyntonHall 4 Classroom
-81 787 677 0 BoyntonHall 4 Classroom
-83 664 290 0 BoyntonHall 4 Classroom
-84 635 290 0 BoyntonHall 4 Classroom
-87 774 290 0 BoyntonHall 4 Classroom
-88 774 378 0 BoyntonHall 4 Classroom
-89 888 300 0 BoyntonHall 4 Waypoint
-90 937 211 0 BoyntonHall 4 Classroom
-91 937 300 0 BoyntonHall 4 Classroom
-92 774 109 0 BoyntonHall 4 Classroom
-93 787 499 0 BoyntonHall 4 Classroom
-94 392 246 0 BoyntonHall 4 Classroom
-95 503 344 0 BoyntonHall 4 Classroom
-96 503 246 0 BoyntonHall 4 Classroom
-97 557 435 0 BoyntonHall 4 Classroom
-98 463 344 0 BoyntonHall 4 Classroom
-99 109 715 0 BoyntonHall 4 Classroom
-100 231 609 0 BoyntonHall 4 Classroom
-101 266 609 0 BoyntonHall 4 Classroom
-102 109 609 0 BoyntonHall 4 Classroom
-103 109 443 0 BoyntonHall 4 Classroom
-104 627 486 0 BoyntonHall 4 Waypoint
+1 870 781 0 BoyntonHall 4 Stairs TEMP;DESCRIPTION;HOLDER;
+2 870 750 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+3 870 651 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+4 870 619 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+7 664 677 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+8 635 677 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+9 571 677 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+10 557 486 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+12 503 435 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+13 471 435 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+14 432 435 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+15 392 435 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+16 299 435 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+17 231 443 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+18 210 443 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+32 307 715 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+33 333 715 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+34 333 854 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+35 446 854 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+37 432 486 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+39 525 151 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+40 402 139 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+41 333 246 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+42 392 211 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+46 427 386 0 BoyntonHall 4 Elevator TEMP;DESCRIPTION;HOLDER;
+47 392 386 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+48 70 191 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+49 42 83 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+53 843 862 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+72 491 715 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+73 476 486 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+76 916 619 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+77 983 619 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+78 916 688 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+79 983 688 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+80 787 619 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+81 787 677 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+83 664 290 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+84 635 290 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+87 774 290 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+88 774 378 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+89 888 300 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+90 937 211 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+91 937 300 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+92 774 109 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+93 787 499 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+94 392 246 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+95 503 344 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+96 503 246 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+97 557 435 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+98 463 344 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+99 109 715 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+100 231 609 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+101 266 609 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+102 109 609 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+103 109 443 0 BoyntonHall 4 Classroom TEMP;DESCRIPTION;HOLDER;
+104 627 486 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+105 446 651 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+106 333 651 3 BoyntonHall 4 Stairs TEMP;DESCRIPTION;HOLDER;
+107 923 781 0 BoyntonHall 4 Waypoint TEMP;DESCRIPTION;HOLDER;
+108 937 836 4 BoyntonHall 4 Stairs TEMP;DESCRIPTION;HOLDER;
 EDGES
 1 1 2
 2 2 3
@@ -73,8 +76,6 @@ EDGES
 32 32 33
 33 33 34
 34 34 35
-35 35 36
-36 36 37
 46 53 1
 63 46 14
 64 47 15
@@ -120,3 +121,8 @@ EDGES
 127 10 104
 128 104 84
 129 104 8
+130 37 105
+131 105 35
+132 106 105
+133 1 107
+134 107 108

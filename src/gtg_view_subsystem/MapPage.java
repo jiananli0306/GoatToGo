@@ -181,7 +181,7 @@ public class MapPage extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				//parent.getPathResult();
 				if(selectedPoints.arePointsSelected() == true){
-					parent.getPathResult(currentDisplayedMap);
+					parent.getPathResult();
 				} else {
 					if(selectedPoints.isStartSelected() == false && selectedPoints.isEndSelected() == true) {
 						JOptionPane.showMessageDialog(null, ViewStringLiterals.FROM_POINT_NOT_SET, "INVALID", JOptionPane.ERROR_MESSAGE);
@@ -575,6 +575,18 @@ public class MapPage extends JPanel {
 			break;
 		}
 	}
+	
+	// Yixiao 2015-12-09
+	public void displayPointInTextfield(String locationType, String pntDescription){
+		switch(locationType){
+		case ViewStringLiterals.FROM:
+			fromTextField.setText(pntDescription);
+			break;			
+		case ViewStringLiterals.TO:
+			toTextField.setText(pntDescription);
+			break;
+		}
+	}
 
 	//public void sentPointToModel(Point startEndPoint, String selectedPointType, String mapName) {
 	//	parent.sentPointToModel(startEndPoint, selectedPointType, mapName);
@@ -591,6 +603,15 @@ public class MapPage extends JPanel {
 		Point pntOnGraph = startEndPoint;
 		pntOnGraph = parent.sentPointToModel(startEndPoint, selectedPointType, mapName);
 		return pntOnGraph;
+	}
+	// Yixiao 2015-12-09
+	public String getPointDescription(Point pnt){
+		return parent.getPointDescription(pnt);
+	}
+	
+	// Yixiao 2015-12-08
+	public String getMouseSelectedBuilding(Point mouseClickedPnt){
+		return parent.getMouseSelectedBuilding(mouseClickedPnt);
 	}
 
 	public void setPoint() {
@@ -629,6 +650,7 @@ public class MapPage extends JPanel {
 		this.mapURL = "";
 		this.isCampusMap = false;
 		this.slidePanel.setLocation(359, 0);
+		this.rightPanel.setLocation(0, 0);
 		this.showHideLocationsBtn.setText(ViewStringLiterals.SHOW_LOCATIONS);
 		this.showAllFilterPointBtn.setText(ViewStringLiterals.SHOW_LOCATIONS);
 		/*if(this.mapMapDisplayPanel != null){
@@ -749,10 +771,15 @@ public class MapPage extends JPanel {
 				JLabel btnFilteredPoints = new JLabel();
 				btnFilteredPoints.setFont(new Font("Meiryo", Font.PLAIN, 22));
 				btnFilteredPoints.setForeground(new Color(0x5b1010));
-				btnFilteredPoints.setText(filteredPoints.get(i).x + "," + filteredPoints.get(i).y);
+				//btnFilteredPoints.setText(filteredPoints.get(i).x + "," + filteredPoints.get(i).y);
+				// Yixiao 2015-12-09
+				btnFilteredPoints.setText(parent.getPointDescription(filteredPoints.get(i)));
+				btnFilteredPoints.setName(Integer.toString((int)filteredPoints.get(i).getX())+","+Integer.toString((int)filteredPoints.get(i).getY()));
 				btnFilteredPoints.setBounds(10, y, 290, 25);
 				btnFilteredPoints.addMouseListener(new MouseAdapter(){
 					public void mouseClicked(MouseEvent me){
+						
+						
 						filteredListItemClicked((JLabel)me.getSource());
 					}
 				});
@@ -821,7 +848,7 @@ public class MapPage extends JPanel {
 	 * for displaying and highlights selected item in the scrollabel list.
 	 */
 	public void filteredListItemClicked(JLabel pointSelected){
-		String tempString = pointSelected.getText();
+		String tempString = pointSelected.getName();
 		String[] tempArray = tempString.split(",");
 		Point tempPoint = new Point(Integer.parseInt(tempArray[0]), Integer.parseInt(tempArray[1]));
 		showHideLocationsBtn.setText(ViewStringLiterals.SHOW_LOCATIONS);

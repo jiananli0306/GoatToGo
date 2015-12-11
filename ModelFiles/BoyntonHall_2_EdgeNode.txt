@@ -1,98 +1,101 @@
 NODES
-1 907 982 0 BoyntonHall 2 Waypoint
-2 907 898 0 BoyntonHall 2 Waypoint
-3 907 727 0 BoyntonHall 2 Stairs
-4 869 727 0 BoyntonHall 2 Waypoint
-6 869 608 0 BoyntonHall 2 Waypoint
-7 869 579 0 BoyntonHall 2 Waypoint
-9 817 427 0 BoyntonHall 2 Waypoint
-10 762 427 0 BoyntonHall 2 Waypoint
-11 723 427 0 BoyntonHall 2 Waypoint
-12 577 427 0 BoyntonHall 2 Waypoint
-14 434 427 0 BoyntonHall 2 Waypoint
-16 262 427 0 BoyntonHall 2 Waypoint
-19 122 298 0 BoyntonHall 2 Waypoint
-20 56 298 0 BoyntonHall 2 Waypoint
-21 40 122 0 BoyntonHall 2 Classroom
-22 107 122 0 BoyntonHall 2 Classroom
-23 172 122 0 BoyntonHall 2 Classroom
-24 56 248 0 BoyntonHall 2 Classroom
-25 122 248 0 BoyntonHall 2 Classroom
-26 189 248 0 BoyntonHall 2 Classroom
-31 329 84 0 BoyntonHall 2 Classroom
-32 371 84 0 BoyntonHall 2 Classroom
-33 422 84 0 BoyntonHall 2 Classroom
-34 422 259 0 BoyntonHall 2 Classroom
-35 384 141 2 BoyntonHall 2 Stairs
-36 497 117 0 BoyntonHall 2 Classroom
-37 546 203 0 BoyntonHall 2 Classroom
-38 474 283 0 BoyntonHall 2 Classroom
-39 505 248 0 BoyntonHall 2 Classroom
-41 699 198 0 BoyntonHall 2 Classroom
-42 739 221 0 BoyntonHall 2 Classroom
-43 774 221 0 BoyntonHall 2 Classroom
-44 792 141 0 BoyntonHall 2 Classroom
-46 762 370 0 BoyntonHall 2 Classroom
-49 864 347 0 BoyntonHall 2 Classroom
-50 1006 347 0 BoyntonHall 2 Classroom
-53 913 579 0 BoyntonHall 2 Classroom
-55 817 481 0 BoyntonHall 2 Classroom
-57 768 520 0 BoyntonHall 2 Classroom
-59 699 508 0 BoyntonHall 2 Classroom
-63 577 481 0 BoyntonHall 2 Classroom
-64 585 597 0 BoyntonHall 2 Classroom
-65 611 689 0 BoyntonHall 2 Classroom
-66 522 689 0 BoyntonHall 2 Classroom
-67 555 597 0 BoyntonHall 2 Classroom
-68 534 556 0 BoyntonHall 2 Classroom
-70 577 534 0 BoyntonHall 2 Classroom
-71 434 481 0 BoyntonHall 2 Classroom
-72 406 550 3 BoyntonHall 2 Stairs
-73 262 539 0 BoyntonHall 2 Classroom
-74 262 631 0 BoyntonHall 2 Classroom
-75 262 738 0 BoyntonHall 2 Classroom
-76 189 579 0 BoyntonHall 2 Classroom
-77 115 643 0 BoyntonHall 2 Classroom
-78 122 754 0 BoyntonHall 2 Classroom
-79 71 643 0 BoyntonHall 2 Classroom
-80 40 738 0 BoyntonHall 2 Classroom
-81 32 481 0 BoyntonHall 2 Classroom
-82 91 566 0 BoyntonHall 2 Classroom
-85 1006 579 0 BoyntonHall 2 Classroom
-86 1006 233 0 BoyntonHall 2 Classroom
-87 864 233 0 BoyntonHall 2 Classroom
-88 864 427 0 BoyntonHall 2 Waypoint
-89 474 427 0 BoyntonHall 2 Waypoint
-90 657 534 0 BoyntonHall 2 Classroom
-91 723 481 0 BoyntonHall 2 Classroom
-92 723 508 0 BoyntonHall 2 Classroom
-93 762 304 0 BoyntonHall 2 Classroom
-94 546 248 0 BoyntonHall 2 Classroom
-95 699 248 0 BoyntonHall 2 Classroom
-96 739 198 0 BoyntonHall 2 Classroom
-97 384 427 0 BoyntonHall 2 Classroom
-98 817 520 0 BoyntonHall 2 Classroom
-99 406 667 0 BoyntonHall 2 Waypoint
-100 474 370 0 BoyntonHall 2 Classroom
-101 288 289 0 BoyntonHall 2 Classroom
-102 341 289 0 BoyntonHall 2 Classroom
-103 189 289 0 BoyntonHall 2 Waypoint
-104 122 427 0 BoyntonHall 2 Classroom
-106 429 347 0 BoyntonHall 2 Elevator
-107 555 689 0 BoyntonHall 2 Waypoint
-108 585 689 0 BoyntonHall 2 Waypoint
-109 678 556 0 BoyntonHall 2 Waypoint
-110 678 597 0 BoyntonHall 2 Classroom
-111 723 556 0 BoyntonHall 2 Waypoint
-112 728 597 0 BoyntonHall 2 Classroom
-113 806 597 0 BoyntonHall 2 Classroom
-114 371 738 0 BoyntonHall 2 Waypoint
-115 497 556 0 BoyntonHall 2 Waypoint
-116 497 520 0 BoyntonHall 2 Classroom
-117 896 141 0 BoyntonHall 2 Classroom
-118 1006 141 0 BoyntonHall 2 Classroom
-119 122 597 0 BoyntonHall 2 Waypoint
-120 91 597 0 BoyntonHall 2 Waypoint
+1 907 982 2 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+2 907 898 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+3 907 727 0 BoyntonHall 2 Stairs TEMP;DESCRIPTION;HOLDER;
+4 869 727 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+6 869 608 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+7 869 579 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+9 817 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+10 762 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+11 723 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+12 577 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+14 434 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+16 262 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+19 122 298 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+20 56 298 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+21 40 122 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+22 107 122 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+23 172 122 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+24 56 248 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+25 122 248 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+26 189 248 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+31 329 84 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+32 371 84 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+33 422 84 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+34 422 259 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+35 384 141 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+36 497 117 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+37 546 203 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+38 474 283 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+39 505 248 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+41 699 198 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+42 739 221 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+43 774 221 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+44 792 141 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+46 762 370 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+49 864 347 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+50 1006 347 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+53 913 579 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+55 817 481 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+57 768 520 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+59 699 508 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+63 577 481 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+64 585 597 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+65 611 689 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+66 522 689 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+67 555 597 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+68 534 556 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+70 577 534 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+71 434 481 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+73 262 539 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+74 262 631 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+75 262 738 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+76 189 579 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+77 115 643 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+78 122 754 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+79 71 643 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+80 40 738 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+81 32 481 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+82 91 566 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+85 1006 579 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+86 1006 233 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+87 864 233 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+88 864 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+89 474 427 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+90 657 534 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+91 723 481 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+92 723 508 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+93 762 304 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+94 546 248 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+95 699 248 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+96 739 198 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+97 384 427 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+98 817 520 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+99 406 667 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+100 474 370 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+101 288 289 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+102 341 289 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+103 189 289 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+104 122 427 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+106 429 347 0 BoyntonHall 2 Elevator TEMP;DESCRIPTION;HOLDER;
+107 555 689 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+108 585 689 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+109 678 556 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+110 678 597 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+111 723 556 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+112 728 597 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+113 806 597 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+114 371 738 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+115 497 556 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+117 896 141 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+118 1006 141 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+119 122 597 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+120 91 597 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+122 329 526 3 BoyntonHall 2 Stairs TEMP;DESCRIPTION;HOLDER;
+123 406 526 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
+124 497 526 0 BoyntonHall 2 Classroom TEMP;DESCRIPTION;HOLDER;
+125 957 667 4 BoyntonHall 2 Stairs TEMP;DESCRIPTION;HOLDER;
+126 907 667 0 BoyntonHall 2 Waypoint TEMP;DESCRIPTION;HOLDER;
 EDGES
 1 1 2
 2 2 3
@@ -123,7 +126,6 @@ EDGES
 77 67 70
 78 68 70
 80 71 14
-81 71 72
 82 16 73
 83 73 74
 84 74 75
@@ -162,7 +164,6 @@ EDGES
 122 97 16
 123 98 55
 124 98 57
-125 72 99
 126 38 100
 127 100 89
 128 102 101
@@ -186,7 +187,6 @@ EDGES
 150 57 113
 151 111 57
 152 99 114
-153 116 115
 154 115 68
 155 117 87
 156 118 86
@@ -195,3 +195,10 @@ EDGES
 159 82 120
 160 119 120
 161 120 79
+162 122 123
+163 123 99
+164 123 124
+165 124 115
+166 71 123
+167 125 126
+168 126 3

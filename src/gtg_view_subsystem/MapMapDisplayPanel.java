@@ -38,6 +38,10 @@ public class MapMapDisplayPanel extends MapDisplayPanel{
 	private ArrayList<Point> filterPoints = new ArrayList<Point>();
 	private boolean showAllFilteredPoints = false;
 	private Point selectedFilterPoint = null;
+	
+	// Yixiao 2015-12-08
+	private Point doubleClickedPoint = new Point();
+	
 	/**
 	 * Create the panel.
 	
@@ -66,7 +70,12 @@ public class MapMapDisplayPanel extends MapDisplayPanel{
 	    	public void actionPerformed(ActionEvent e) {
 	    		startEndPoint = parent.sentPointToModel(startEndPoint, ViewStringLiterals.FROM, map);
 	    		selectedPoints.setStartLocation((int)startEndPoint.getX(), (int)startEndPoint.getY(), map);
-	    		parent.displayPointInTextfield(ViewStringLiterals.FROM, startEndPoint.getX(), startEndPoint.getY());
+	    		//parent.displayPointInTextfield(ViewStringLiterals.FROM, startEndPoint.getX(), startEndPoint.getY());
+
+	    		//Yixiao 2015-12-09
+	    		String pointDescription = parent.getPointDescription(startEndPoint);
+	    		parent.displayPointInTextfield(ViewStringLiterals.FROM, pointDescription);
+	    		
 	    		revalidate();
 	    		repaint();
 	    	}
@@ -79,7 +88,12 @@ public class MapMapDisplayPanel extends MapDisplayPanel{
 	    	public void actionPerformed(ActionEvent e) {
 	    		startEndPoint = parent.sentPointToModel(startEndPoint, ViewStringLiterals.TO, map);
 	    		selectedPoints.setEndLocation((int)startEndPoint.getX(), (int)startEndPoint.getY(), map);
-	    		parent.displayPointInTextfield(ViewStringLiterals.TO, startEndPoint.getX(), startEndPoint.getY());
+	    		//parent.displayPointInTextfield(ViewStringLiterals.TO, startEndPoint.getX(), startEndPoint.getY());
+
+	    		//Yixiao 2015-12-09
+	    		String pointDescription = parent.getPointDescription(startEndPoint);
+	    		parent.displayPointInTextfield(ViewStringLiterals.TO, pointDescription);
+	    		
 	    		revalidate();
 	    		repaint();
 	    	}
@@ -192,6 +206,23 @@ public class MapMapDisplayPanel extends MapDisplayPanel{
 	@Override
 	public void mouseReleased(MouseEvent me) {
 		this.maybeShowPopup(me);
+	}
+	
+	// Yixiao 2015-12-08
+	@Override
+	public void mouseClicked(MouseEvent me){
+		// Only response to double Click
+		if(me.getClickCount() == 2){
+			doubleClickedPoint.x = me.getX();
+			doubleClickedPoint.y = me.getY();			
+			String correspondMapName = parent.getMouseSelectedBuilding(doubleClickedPoint);
+			if(correspondMapName!=null){
+				parent.updateMapList(correspondMapName);
+			}
+			else{
+				System.out.println("Mouse Double Clicked at: "+me.getX()+" ,"+me.getY());
+			}
+		}
 	}
 
 	/**

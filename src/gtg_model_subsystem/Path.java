@@ -64,6 +64,10 @@ public class Path
 		 */
 		public void setPath(List<Node> wayPoints){
 			this.wayPoints = wayPoints;
+			System.out.println(this.startPoint.getEntranceID()+" "+this.endPoint.getEntranceID());
+			for(Node n:wayPoints){
+				System.out.println(n.getX()+" "+n.getY()+" "+n.getEntranceID()+" "+n.getFloorNum());
+			}	
 		}
 		/**return start point
 	 * @return Node
@@ -85,4 +89,17 @@ public class Path
 		public List<Node> getWayPoints(){
 			return this.wayPoints;
 		}
+		
+		public double calculatePathDistance()
+		{
+		  double sum=0;
+		  Node lastNode=null;	  
+		  for(Node node:this.wayPoints){
+			  if(lastNode!=null)
+			    sum=sum+Math.sqrt(Math.pow(node.getX()-lastNode.getX(), 2)+ Math.pow(node.getY() - lastNode.getY(), 2));
+			  lastNode=node;
+		  }
+		  return sum;
+		}
+		
 	}
